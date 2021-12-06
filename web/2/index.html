@@ -1,0 +1,164 @@
+<!DOCTYPE HTML> <!-- Indicar la versión-->
+
+<html lang="es">
+<!-- Atributo marcando el idioma-->
+
+<head>
+    <!-- Metadatos, informaciones que no van a ser visibles-->
+    <title> Web </title>
+
+</head>
+
+<body>
+    <!-- Contenido, lo que se va a mostrar-->
+    <h1>WEB</h1>
+    <h2>Welcome</h2>
+
+    <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit, quod consequuntur repellendus laborum voluptatum
+        magni officiis quos facere enim nobis expedita dolorum incidunt est et sapiente. Cum eveniet esse amet.
+        Praesentium non odit magni possimus quidem, corrupti debitis est molestiae maxime facere dolorum assumenda, quae
+        magnam quis, vero nihil accusamus! Porro harum vitae error, numquam doloribus ducimus quidem blanditiis odio.
+        Aliquam rerum corrupti accusamus animi, consequatur neque optio eius molestias reprehenderit esse blanditiis
+        possimus commodi suscipit omnis dolor soluta nihil itaque quasi. Vitae atque nihil mollitia debitis alias facere
+        at. <br>
+        Quaerat sapiente modi molestias suscipit nobis aliquam natus itaque voluptatum, et deserunt quos voluptas esse
+        voluptatem fuga assumenda. Rerum, maxime iusto debitis molestiae consequuntur illo velit fugit harum provident
+        tenetur.
+        Quasi rerum ullam assumenda ad neque quibusdam, sed impedit. Natus reiciendis iste at enim dolorum, id numquam
+        itaque. Dolor atque eligendi fugiat accusamus saepe velit quia tempora debitis porro? Sed.
+        Inventore laborum tempora ipsum hic ut voluptates corrupti dolore! Maiores minima ex accusamus dolores quod quo.
+        Inventore quae amet dolorem sed quis. Beatae modi inventore dignissimos blanditiis nihil est aliquam!
+    </p>
+
+    <hr>
+
+    <h2>Imagenes</h2>
+    <img src="img/1.jpg" alt="imagen1Russia" title="IMG1" height="500px">
+
+    <hr>
+    <!--Separador-->
+
+    <h3>Tercer Encabezado</h3>
+    <p>
+        <strong>Negrilla</strong>
+        <em>Cursiva</em>
+        <span id="resaltado"></span>
+        <!--Luego se maneja en css-->
+    <h3>Citas</h3>
+    <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam commodi iste dolorem! Illum nemo,
+        mollitia illo corporis quae a odio neque fuga tempore repudiandae, placeat commodi magnam, optio rerum
+        architecto.
+        Beatae magni, rem voluptatibus ea accusamus omnis sequi fuga praesentium enim consequatur. Commodi eius dicta
+        esse cum nulla reprehenderit eos ullam. Laudantium a sit aliquid harum iusto omnis dolore non?</blockquote>
+    </p>
+
+    <h3>Listas Ordenadas</h3>
+    <ol>
+        <li> Uno</li>
+        <li> Dos</li>
+        <li> Tres</li>
+    </ol>
+
+
+    <h3>Listas Desordenadas</h3>
+
+    <ul>
+        <li> Uno</li>
+        <li> Dos</li>
+        <li> Tres</li>
+    </ul>
+
+    <h3>Listas en listas</h3>
+
+    <ul>
+        <li>Sublista
+            <ul>
+                <li>Unos</li>
+                <li>Dos</li>
+            </ul>
+        </li>
+        <li> Dos</li>
+        <li> Tres</li>
+
+        <h3>Tablas</h3>
+
+        <table border="1">
+            <!--Filas-->
+            <tr>
+                <!--Columnas en la fila-->
+                <!--Se cambia td por th porque estas no son campos sino caracteristicas-->
+                <th>Nombre</th>
+                <th> Apellido</th>
+                <th> Pais</th>
+
+            </tr>
+
+            <!--Primer Campo-->
+            <tr>
+                <td>Juan</td>
+                <td> Velasquez</td>
+                <td> Russia</td>
+
+            </tr>
+
+            <!--Segundo Campo-->
+            <tr>
+                <td>Luis</td>
+                <!--Expandir columnas-->
+                <td colspan="2"> Cortez</td>
+
+            </tr>
+
+            <!--Tercer Campo-->
+            <tr>
+                <td>Carlos</td>
+                <td> Cortez</td>
+                <td> Italia</td>
+
+            </tr>
+
+
+
+        </table>
+
+        <h3>Formulario</h3>
+        <form>
+
+            <!--Campo de tipo texto-->
+
+            <p>
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" placeholder="Escribe tu nombre" id="">
+            </p>
+
+            <!--Campo de texto de area, bastante texto-->
+            <p>
+
+                <label for="descipcion"></label>
+                <textarea name="descripcion"></textarea>
+            </p>
+
+            <!--Seleccion multiple-->
+            <p>
+                <input type="radio" name="genero" value="hombre"> Hombre <br>
+                <input type="radio" name="genero" value="mujer"> Mujer <br>
+                <input type="radio" name="genero" value="otro"> Otro <br>
+
+            </p>
+
+            <!--Lista desplegable de selección-->
+            <select name="genero2" id="">
+                <option value="hombre">Hombre</option>
+                <option value="mujer">mujer</option>
+                <option value="otro">Otro</option>
+            </select>
+
+            <!--Pintar un boton para enviar el formulario-->
+            <input type="submit" value="Enviar Formulario">
+
+
+        </form>
+</body>
+
+</html>
