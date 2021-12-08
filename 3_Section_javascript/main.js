@@ -102,4 +102,55 @@ for(var i= 2000; i<=2020 ; i++){
   });
 
 
+// JSON
 
+var coche = {
+    modelo:'Mercedes Clase A',
+    maxima:500,
+    antiguedad: 2020,
+    mostrarDatos(){
+        console.log(this.modelo,this.maxima,this.antiguedad);
+    },
+    propiedad:"valor aleatorio"
+};
+
+document.write("<h1>"+coche.modelo + "</h1>");
+
+//Llamar a metodo accediendo desde el objeto
+coche.mostrarDatos();
+console.log(coche);
+
+//Promesas, estructuras u objetos muy usado en peticiones asincronas AJAX, peticiones que pueden tardar
+// mucho tiempo en devolver un resultado, o que incluso puede no devolverlo. Una promesa representa un valor que 
+// puede estar disponible ahora, en un futuro o nunca
+
+// Con las promesas capturamos la respuesta positiva de un servicio, trozo de código o petición AJAX; o controlar la parte en que esa petición fue rechazada
+// Las promesas, nos prometen que nos va a llegar un dato, o nos va a llegar un error
+
+var saludar = new Promise((resolve, reject) => {
+
+    //Funcion que espera unos segundos hasta que algo se ejecute
+    // Va a ejecutar la función que tiene ahí dentro a los 2 segundos, y no directamente 
+    // al cargar la pág
+
+    setTimeout(()=>{
+        //Creación de variable con let
+        let saludo= "Hola muy buenas a todos chavalaes!!!";
+
+        //Setar a falso para ver qué pasa si no hay saludo
+        //saludo=false;
+        if(saludo){
+            resolve(saludo);
+        }else{
+            reject('No hay saludo disponible')
+        }
+    }, 2000);
+} );
+
+// Método Then, es primero ejectuar la promesa saludar y luego el then
+saludar.then(resultado =>{
+    alert(resultado);
+})
+.catch(err => {
+    alert(err);
+});
